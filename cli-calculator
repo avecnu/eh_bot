@@ -1,0 +1,16 @@
+import math
+import argparse
+
+parser = argparse.ArgumentParser(description="")
+parser.add_argument('--payment', type=int, default=None, help="One payment amount")
+parser.add_argument('--principal',type=int, default=None, help="The amount of the loan")
+parser.add_argument('--periods', type=int, default=None, help="How many months")
+parser.add_argument('--interest', type=int, default=None, help="Bank interest payment")
+
+args = parser.parse_args()
+
+payment = args.payment if not None 
+loan = args.principal
+months = args.periods
+interest = args.interest
+
